@@ -71,6 +71,10 @@
   color: #dcdee0;
 }
 
+.menu-slider--no-js .menu-slider__item {
+  position: relative;
+}
+
 .menu-slider--no-js .menu-slider__dish-name {
   bottom: -20px;
 }
@@ -99,17 +103,12 @@
   }
 
   .menu-slider--no-js .menu-slider__item {
-    position: relative;
     width: 280px;
     height: auto;
   }
 
   .menu-slider--no-js img {
     width: 280px;
-  }
-
-  .menu-slider--no-js .menu-slider__dish-name {
-    bottom: -20px;
   }
 }
 
