@@ -1,0 +1,56 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls button {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 54px;
+  margin-bottom: 3px;
+  background-color: #edeff2;
+  border: none;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &:active {
+    background-color: #edeff2;
+  }
+}
+
+.controls__previous::before,
+.controls__previous::after,
+.controls__next::before,
+.controls__next::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 2px;
+  height: 10px;
+  left: 19px;
+  background-color: #000;
+}
+
+.controls__previous::before,
+.controls__next::before {
+  top: 18px;
+  transform: rotate(45deg);
+}
+
+.controls__next::before {
+  transform: rotate(132deg);
+}
+
+.controls__previous::after,
+.controls__next::after {
+  top: 24px;
+  transform: rotate(-45deg);
+}
+
+.controls__next::after {
+  transform: rotate(-132deg);
+}

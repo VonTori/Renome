@@ -1,0 +1,166 @@
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+}
+
+.page-nav__list {
+  @include list;
+}
+
+.page-nav__item a {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px; 
+  line-height: 60px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #bbbdbf;
+}
+
+.page-nav__item--active a {
+  color: #985e5b;
+}
+
+.page-nav__item a[href] {
+  &:hover {
+    background-color: #f7f7f7;
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: #985e5b;
+    opacity: 1;
+  }
+}
+
+.page-nav__search-form {
+  display: flex;
+  order: -1;
+  border-bottom: 1px solid #bbbdbf;
+}
+
+.page-nav__search-form input {
+  width: 85%;
+  height: 52px;
+  border: none;
+}
+
+.page-nav__search-form input::placeholder {
+  font-family: $font-main;
+  font-size: 12px;
+  font-weight: 700; 
+  letter-spacing: 2px;
+}
+
+.page-nav__search-button {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  background: url("../img/sprite.png");
+  background-position: -39px -41px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+@media ($small-width-only) {
+  .page-nav--closed {
+    display: none;
+  }
+
+  .page-nav--opened {
+    position: absolute;
+    top: 83px;
+    right: 0;
+    left: 0;
+    z-index: 15;
+  }
+
+  .page-nav--opened a,
+  .page-nav--opened input {
+    padding-left: 10px;
+  }
+
+  .page-nav--no-js .page-nav__list {
+    display: block;
+  }
+}
+
+@media ($middle-width) {
+  .page-nav {
+    flex-direction: row;
+  }
+
+  .page-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-left: 20px;
+    padding-right: 5px;
+  }
+
+  .page-nav__item a {
+    margin-right: 10px;
+    border: none;
+    line-height: 25px;
+  }
+
+
+  .page-nav__item a[href] {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .page-nav__search-form {
+    order: 1;
+    border: none;
+  }
+
+  .page-nav__search-form input {
+     display: none;
+  }
+
+  .page-nav__search-button {
+    width: 30px;
+    height: 30px;
+    background-position: -42px -50px;
+  }
+}
+
+@media ($full-width) {
+  .page-nav__list {
+    position: relative;
+    padding-right: 0;
+  }
+  
+  .page-nav__list::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 9px;
+    top: 8px;
+    right: 10px;
+    background-color: #000;
+  }
+
+  .page-nav__item a {
+    margin-right: 31px;
+  }
+
+  .page-nav__item:last-of-type a {
+    margin-right: 28px;
+  }
+}

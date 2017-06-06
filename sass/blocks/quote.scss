@@ -1,0 +1,81 @@
+.quote {
+  position: relative;
+}
+
+.quote::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+  background-color: #f7f7f7;
+  z-index: -1;
+}
+
+.quote__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 65px;
+  @include container();
+}
+
+.quote__picture img {
+  width: 300px;
+  height: auto;
+}
+
+.quote__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #1e2633;
+}
+
+.quote__phrase {
+  width: 230px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.quote__author {
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+@media ($middle-width) {
+  .quote__wrapper {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .quote__picture {
+    margin-right: 30px;
+  }
+
+  .quote__phrase {
+    width: 370px;
+    margin-top: 100px;
+    font-size: 25px;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+    line-height: 38px;
+  }
+}
+
+@media ($full-width) {
+  .quote__picture img {
+    width: 350px;
+  }
+
+  .quote__phrase {
+    width: 410px;
+    margin-top: 190px;
+  }
+}

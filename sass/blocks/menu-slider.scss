@@ -1,0 +1,140 @@
+.menu-slider {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 145px;
+  background-color: #f7f7f7;
+}
+
+.menu-slider__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include container();
+}
+
+.menu-slider__title {
+  @include title();
+}
+
+.menu-slider__subtitle {
+  @include subtitle();
+}
+
+.menu-slider__slideshow {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.menu-slider__arrows {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  z-index: 1;
+}
+
+.menu-slider--no-js .menu-slider__arrows {
+  display: none;
+}
+
+.menu-slider__slides {
+  @include list();
+}
+
+.menu-slider__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 200px;
+  margin-top: 30px;
+}
+
+.menu-slider__item img {
+  width: 300px;
+  height: auto;
+}
+
+.menu-slider__dish-name,
+.menu-slider__day {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -35px;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.menu-slider__day {
+  bottom: 70px;
+  font-size: 20px;
+  color: #dcdee0;
+}
+
+.menu-slider--no-js .menu-slider__dish-name {
+  bottom: -20px;
+}
+
+@media ($middle-width) {
+  .menu-slider__slideshow,
+  .menu-slider__item img {
+    width: 600px;
+  }
+
+  .menu-slider__item {
+    width: 600px;
+    height: 400px;
+  }
+
+  .menu-slider__arrows {
+    top: 170px;
+  }
+
+  .menu-slider--no-js .menu-slider__slides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 600px;
+    font-size: 0;
+  }
+
+  .menu-slider--no-js .menu-slider__item {
+    position: relative;
+    width: 280px;
+    height: auto;
+  }
+
+  .menu-slider--no-js img {
+    width: 280px;
+  }
+
+  .menu-slider--no-js .menu-slider__dish-name {
+    bottom: -20px;
+  }
+}
+
+@media ($full-width) {
+  .menu-slider__wrapper {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .menu-slider__title,
+  .menu-slider__subtitle {
+    margin-left: 70px;
+  }
+
+  .menu-slider__title {
+    margin-top: 40px;
+  }
+
+  .menu-slider__slideshow {
+    margin-left: auto;
+    margin-right: 80px;
+  }
+
+  .menu-slider__day {
+    left: 920px;
+    bottom: 100px;
+  }
+}

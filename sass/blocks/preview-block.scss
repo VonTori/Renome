@@ -1,0 +1,148 @@
+.preview-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 55px 0;
+  @include container();
+}
+
+.preview-block--reverse {
+  text-align: right;
+}
+
+.preview-block__pictures {
+  position: relative;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.preview-block__pictures--about {
+  height: 320px;
+}
+
+.preview-block__pictures--menu {
+  height: 263px;
+}
+
+.preview-block__pictures--reservation {
+  height: 286px;
+}
+
+.preview-block__pictures--contact {
+  height: 248px;
+}
+
+.preview-block__pictures img {
+  max-width: 300px;
+  height: auto;
+}
+
+.preview-block__pictures picture {
+  position: absolute;
+}
+
+.preview-block__pictures picture:first-of-type {
+  top: 0;
+  right: 0;
+}
+
+.preview-block__pictures picture:last-of-type {
+  left: 0;
+  bottom: 0;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.preview-block__text {
+  width: 290px;
+  margin-top: 40px;
+}
+
+.preview-block__title {
+  @include title();
+}
+
+.preview-block__subtitle {
+  @include subtitle();
+}
+
+.preview-block__text p {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  font-family: $font-main;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+
+@media ($width-for-preview-block-text) {
+  .preview-block__text {
+    width: 70%;
+  }
+}
+
+@media ($middle-width) {
+  .preview-block {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .preview-block--reverse {
+    flex-direction: row-reverse;
+
+    .preview-block__text {
+       margin-right: 6%;
+       margin-left: 0;
+    }
+  }
+
+  .preview-block__text {
+    width: 330px;
+    margin-right: 0;
+    margin-left: 6%;
+  }
+}
+
+@media ($width-for-preview-block-pictures) {
+  .preview-block__pictures img {
+    max-width: 380px;
+  }
+
+  .preview-block__pictures--about {
+    width: 420px;
+    height: 445px;
+  }
+
+  .preview-block__pictures--menu {
+    width: 480px;
+    height: 418px;
+  }
+
+  .preview-block__pictures--reservation {
+    width: 420px;
+    height: 420px;
+  }
+
+  .preview-block__pictures--contact {
+    width: 498px;
+    height: 400px;
+  }
+}
+
+@media ($full-width) {
+  .preview-block {
+    padding: 90px 0;
+  }
+
+  .preview-block--reverse {
+    .preview-block__text {
+       margin-right: 80px;
+    }
+  }
+
+  .preview-block__text {
+    margin-left: 80px;
+  }
+}
