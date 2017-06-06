@@ -79,7 +79,8 @@ body {
   top: 3px;
   right: 11px;
   background-color: #000;
-  box-shadow: 0 7px 0 0 #000, 0 14px 0 0 #000; }
+  box-shadow: 0 7px 0 0 #000,
+ 0 14px 0 0 #000; }
 
 .page-header--no-js .page-header__button {
   display: none; }
@@ -1123,7 +1124,7 @@ body {
 
   .page-nav--opened {
     position: absolute;
-    top: 83px;
+    top: 75px;
     right: 0;
     left: 0;
     z-index: 15; }
