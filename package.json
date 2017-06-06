@@ -1,0 +1,37 @@
+{
+  "name": "Renome",
+  "version": "0.1.0",
+  "private": true,
+  "description": "for portfolio",
+  "devDependencies": {
+    "autoprefixer": "6.7.x",
+    "browser-sync": "2.18.8",
+    "gulp": "3.9.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
+    "gulp-imagemin": "^3.0.1",
+    "css-mqpacker": "^6.0.1",
+    "gulp-sass": "3.1.0"
+  },
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.png",
+    "img/**/*.jpg",
+    "sass/**/*.{sass,scss)"
+  ],
+  "engines": {
+    "node": "7.10.0"
+  },
+  "dependencies": {
+    "css-mqpacker": "^6.0.1",
+    "gulp-imagemin": "^3.3.0"
+  }
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Renome</title>
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="page-header  page-header--no-js">
+      <div class="page-header__wrapper">
+        <h1 class="visually-hidden">Restaurant Renome</h1>
+        <a><img class="page-header__logo" src="img/header-logo@1x.png" srcset="img/header-logo@2x.png 2x" width="94" height="23" alt="Restaurant Renome"></a>
+
+        <div class="page-header__user-block">
+          <a class="shopping-cart" href="#" title="Shopping cart">
+            <span class="visually-hidden">Shopping cart</span>
+            <span class="shopping-cart__output">2</span>
+          </a>
+          <button class="page-header__button" type="button"><span class="visually-hidden">Open navigation</span></button>
+        </div>
+
+        <nav class="page-nav  page-nav--opened  page-nav--no-js">
+          <ul class="page-nav__list">
+            <li class="page-nav__item  page-nav__item--active">
+              <a>Home</a>
+            </li>
+            <li class="page-nav__item">
+              <a href="#">About</a>
+            </li>
+            <li class="page-nav__item">
+              <a href="#">Menu</a>
+            </li>
+            <li class="page-nav__item">
+              <a href="#">Reservations</a>
+            </li>
+            <li class="page-nav__item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="page-nav__item">
+              <a href="#">Shop</a>
+            </li>
+            <li class="page-nav__item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="page-nav__search-form">
+            <input type="search" placeholder="Search...">
+            <button class="page-nav__search-button" type="submit"><span class="visually-hidden">Search</span></button>
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <header class="top-slider  top-slider--no-js">
+      <ul class="top-slider__items">
+        <li class="top-slider__item  top-slider__item--1"></li>
+        <li class="top-slider__item  top-slider__item--2"></li>
+        <li class="top-slider__item  top-slider__item--3"></li>
+      </ul>
+      <div class="top-slider__wrapper">
+        <div class="top-slider__text">
+          <h2 class="top-slider__title">Made with love</h2>
+          <b class="top-slider__subtitle">for you</b>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="preview-block">
+        <figure class="preview-block__pictures  preview-block__pictures--about">
+          <picture>
+            <source media="(min-width: 950px)" srcset="img/about-1-desktop@1x.jpg 1x, img/about-1-desktop@2x.jpg 2x">
+            <img src="img/about-1-mobile@1x.jpg" srcset="img/about-1-mobile@2x.jpg 2x" alt="Our Renome">
+          </picture>
+          <picture>
+            <source media="(min-width: 950px)" srcset="img/about-2-desktop@1x.jpg 1x, img/about-2-desktop@2x.jpg 2x">
+            <img src="img/about-2-mobile@1x.jpg" srcset="img/about-2-mobile@2x.jpg 2x" alt="Our Renome">
+          </picture>
+        </figure>
+        <div class="preview-block__text">
+          <h2 class="preview-block__title">About</h2>
+          <b class="preview-block__subtitle">We create delicious memories</b>
+          <p>Renome it is renowned restaurant delights the senses with elegant ambiance, gracious service and delectable menus in the heart of Manhattan’s. The distinctive setting boasts contemporary furnishings and finishes atop the restaurant’s grand modern architecture.</p>
+          <p>Renome offers the room for private dining where guests enjoy creative foods and sumptuous late night desserts.</p>
+          <a class="more-link" href="#" title="See more"><span class="visually-hidden">See more</span>...</a>
+        </div>
+      </section>
+
+      <section class="menu-slider  menu-slider--no-js">
+        <div class="menu-slider__wrapper">
+          <div class="menu-slider__text">
+            <h2 class="menu-slider__title">Lunch</h2>
+            <b class="menu-slider__subtitle">Of the day</b>
+          </div>
+          <div class="menu-slider__slideshow">
+            <div class="menu-slider__arrows">
+              <span class="controls">
+                <button class="controls__previous" type="button" onclick="plusSlides(-1)"></button>
+                <button class="controls__next" type="button" onclick="plusSlides(+1)"></button>
+              </span>
+            </div>
+            <ul class="menu-slider__slides"> 
+              <li class="menu-slider__item">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="img/lunch-slide-1-desktop@1x.jpg, img/lunch-slide-1-desktop@2x.jpg 2x">
+                  <img src="img/lunch-slide-1-mobile@1x.jpg" srcset="img/lunch-slide-1-mobile@2x.jpg 2x" alt="Homemade baguette">
+                </picture>
+                <h3 class="menu-slider__dish-name">Homemade baguette</h3>
+              </li>
+              <li class="menu-slider__item">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="img/lunch-slide-2-desktop@1x.jpg, img/lunch-slide-2-desktop@2x.jpg 2x">
+                  <img src="img/lunch-slide-2-mobile@1x.jpg" srcset="img/lunch-slide-2-mobile@2x.jpg 2x" alt="Yummy eggs">
+                </picture>
+                <h3 class="menu-slider__dish-name">Yummy eggs</h3>
+              </li>
+              <li class="menu-slider__item">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="img/lunch-slide-3-desktop@1x.jpg, img/lunch-slide-3-desktop@2x.jpg 2x">
+                  <img src="img/lunch-slide-3-mobile@1x.jpg" srcset="img/lunch-slide-3-mobile@2x.jpg 2x" alt="Barbecue cake">
+                </picture>
+                <h3 class="menu-slider__dish-name">Barbecue cake</h3>
+              </li>
+              <li class="menu-slider__item">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="img/lunch-slide-4-desktop@1x.jpg, img/lunch-slide-4-desktop@2x.jpg 2x">
+                  <img src="img/lunch-slide-4-mobile@1x.jpg" srcset="img/lunch-slide-4-mobile@2x.jpg 2x" alt="Meat and vegetables">
+                </picture>
+                <h3 class="menu-slider__dish-name">Meat and vegetables</h3>
+              </li>
+            </ul>
+          </div>
+          <span class="menu-slider__day">Monday</span>
+        </div>
+      </section>
+
+      <section class="preview-block  preview-block--reverse">
+        <figure class="preview-block__pictures  preview-block__pictures--menu">
+          <picture>
+            <source media="(min-width: 950px)" srcset="img/menu-1-desktop@1x.jpg 1x, img/menu-1-desktop@2x.jpg 2x">
+            <img src="img/menu-1-mobile@1x.jpg" srcset="img/menu-1-mobile@2x.jpg 2x" alt="Our dishes">
+          </picture>
+          <picture>
+            <source media="(min-width: 950px)" srcset="img/menu-2-desktop@1x.jpg 1x, img/menu-2-desktop@2x.jpg 2x">
+            <img src="img/menu-2-mobile@1x.jpg" srcset="img/menu-2-mobile@2x.jpg 2x" alt="Our dishes">
+          </picture>
+        </figure>
+        <div class="preview-block__text">
+          <h2 class="preview-block__title">Menu</h2>
+          <b class="preview-block__subtitle">Delicious and beautiful</b>
+          <p>In our menu you will find a great variety of delicious food that will satisfy the needs and tastes of everyone. We strive to source the highest quality ingredients for all of our dishes thereby enhancing the quality of services.</p>
+          <a class="more-link" href="#" title="See more"><span class="visually-hidden">See more</span>...</a>
+        </div>
+      </section>
+
+      <section class="quote">
+        <div class="quote__wrapper">
+          <div class="quote__picture">
+            <picture>
+              <source media="(min-width: 1181px)" srcset="img/quote-img-desktop@1x.jpg 1x, img/quote-img-desktop@2x.jpg 2x">
+              <img src="img/quote-img-mobile@1x.jpg" srcset="img/quote-img-mobile@2x.jpg 2x" alt="Our restaurant">
+            </picture>
+          </div>
+          <div class="quote__text">
+            <q class="quote__phrase">The most romantic and perfect place</q>
+            <cite class="quote__author">John Doe</cite>
+          </div>
+        </div>
+      </section>
+
+      <section class="preview-block">
+        <figure class="preview-block__pictures  preview-block__pictures--reservation">
+          <picture>
+            <source media="(min-width: 950px)" srcset="img/reservation-1-desktop@1x.jpg 1x, img/reservation-1-desktop@2x.jpg 2x">
+            <img src="img/reservation-1-mobile@1x.jpg" srcset="img/reservation-1-mobile@2x.jpg 2x" alt="Dish">
+          </picture>
+          <picture>
+            <source media="(min-width: 950px)" srcset="img/reservation-2-desktop@1x.jpg 1x, img/reservation-2-desktop@2x.jpg 2x">
+            <img src="img/reservation-2-mobile@1x.jpg" srcset="img/reservation-2-mobile@2x.jpg 2x" alt="Dish">
+          </picture>
+        </figure>
+        <div class="preview-block__text">
+          <h2 class="preview-block__title">Reservation</h2>
+          <b class="preview-block__subtitle">Book your table at our restaurant now!</b>
+          <p>Call you on the date of your reservation to confirm your table. If you do not receive an email, or do not hear from the restaurant, we would recommend calling to confirm your table and verify your reservation booking (+1 939 777 55 33).</p>
+          <a class="more-link" href="#" title="See more"><span class="visually-hidden">See more</span>...</a>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2 class="services__title">Our services</h2>
+        <b class="services__subtitle">Advantages of our restaurant</b>
+        <ul class="services__list">
+          <li class="services__item">
+            Pickup or Delivery
+          </li>
+          <li class="services__item">
+            Serving With Love
+          </li>
+          <li class="services__item">
+            Daily Lunch Specials
+          </li>
+        </ul>
+        <div class="services__order">
+          <a class="btn" href="#" title="Order now">Order now</a>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="news__wrapper">
+          <h2 class="news__title">Blog</h2>
+          <b class="news__subtitle">News, recipes and much more</b>
+          <ul class="news__list">
+            <li>
+              <section class="news__item">
+                <span class="news__date">10/03</span>
+                <h3 class="news__caption">Grand opening!</h3>
+                <a class="more-link" href="#" title="See more"><span class="visually-hidden">See more</span>...</a>
+              </section>
+            </li>
+            <li>
+              <section class="news__item">
+                <span class="news__date">07/03</span>
+                <h3 class="news__caption">Mini chilli pretzels</h3>
+                <a class="more-link" href="#" title="See more"><span class="visually-hidden">See more</span>...</a>
+              </section>
+            </li>
+            <li>
+              <section class="news__item">
+                <span class="news__date">05/06</span>
+                <h3 class="news__caption">Summer specials</h3>
+                <a class="more-link" href="#" title="See more"><span class="visually-hidden">See more</span>...</a>
+              </section>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="preview-block  preview-block--reverse">
+        <figure class="preview-block__pictures  preview-block__pictures--contact">
+          <picture>
+            <source media="(min-width: 950px)" srcset="img/contact-1-desktop@1x.jpg 1x, img/contact-1-desktop@2x.jpg 2x">
+            <img src="img/contact-1-mobile@1x.jpg" srcset="img/contact-1-mobile@2x.jpg 2x" alt="Food">
+          </picture>
+          <picture>
+            <source media="(min-width: 950px)" srcset="img/contact-2-desktop@1x.jpg 1x, img/contact-2-desktop@2x.jpg 2x">
+            <img src="img/contact-2-mobile@1x.jpg" srcset="img/contact-2-mobile@2x.jpg 2x" alt="Food">
+          </picture>
+        </figure>
+        <div class="preview-block__text">
+          <h2 class="preview-block__title">Contact</h2>
+          <b class="preview-block__subtitle">We welcome you in our restaurant</b>
+          <p>Please feel free to contact us with any questions or to make reservations. If no one is available to take your call, please leave a message. We will contact you as soon as possible.</p>
+          <a class="more-link" href="#" title="See more"><span class="visually-hidden">See more</span>...</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a><img class="page-footer__logo" src="img/footer-logo@1x.png" srcset="img/footer-logo@2x.png 2x" width="76" height="18" alt="Restaurant Renome"></a>
+        <p class="page-footer__copyright">
+          Copyright 2015 Renome by <a href="#" title="To the website">ESTETIQ</a>
+        </p>
+        <div class="page-footer__social">
+          <span>Follow us:</span>
+          <span class="social-links">
+            <a class="social-links__item  social-links__item--fb" href="#" title="Facebook"><span class="visually-hidden">Facebook</span></a>
+            <a class="social-links__item  social-links__item--tw" href="#" title="Twitter"><span class="visually-hidden">Twitter</span></a>
+            <a class="social-links__item  social-links__item--gg" href="#" title="Google"><span class="visually-hidden">Google</span></a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
